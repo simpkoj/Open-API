@@ -1,10 +1,11 @@
 
- fetch('https://dog.ceo/api/breeds/image/random')
-  .then((response) => {
-    if(!response.ok) {
-      throw new Error("Failed to fetch repositories");
-    }
-    return response.json();
+const url = 'https://dog.ceo/api/breeds/image/random';
+
+fetch(url)
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
   })
-  
-   
+  .catch(error => {
+    console.error('There was a problem with the fetch operation:', error);
+  });
