@@ -49,7 +49,7 @@ nav ul li a {
 }
 
 nav ul li a:hover, nav ul li a.active {
-  background-color: #007bff;
+  background-color: #f00eac;
   color: #fff;
 }
 
@@ -75,7 +75,7 @@ main {
 }
 
 .breed-item:hover {
-  background-color: #480af5;
+  background-color: #f00eac;
   transform: scale(1.02);
 }
 
